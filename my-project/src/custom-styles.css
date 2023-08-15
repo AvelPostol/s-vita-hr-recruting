@@ -1,0 +1,35 @@
+.my-form {
+    /* Ваши стили для формы */
+  }
+  .v-input__details{
+    margin: 0px 0px 10px 0px;
+  }
+  .input-dnld{
+    max-width: 240px;
+  }
+  .section-comment-line{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-comment-line .container{
+    width: 100%;
+    max-width: 80vw;
+  }
+  
+  .my-input {
+    /* Ваши стили для полей ввода */
+  }
+  
+  .my-checkbox {
+    /* Ваши стили для чекбокса */
+  }
+  
+  .my-button {
+    /* Ваши стили для кнопки */
+  }
+  
+  .my-dialog {
+    /* Ваши стили для всплывающего окна */
+  }
