@@ -2,7 +2,7 @@
 <template>
   <div>
    <v-card-title>
-    <h2>Панель редактирования</h2>
+    <h2>Панель редактирования1</h2>
    </v-card-title>
    <v-card-text>
     <v-row>
