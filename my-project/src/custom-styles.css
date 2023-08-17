@@ -12,16 +12,83 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fffdfb;
+    padding: 0px 0px 100px 0px;
   }
   .section-comment-line .container{
     width: 100%;
-    max-width: 80vw;
+    max-width: 1366px;
+    background-color: #EDF3FF;
+    padding: 15px;
+    border-radius: 8px;
   }
-  
+  .otz-title{
+    font-weight: 900;
+    color: #313654;
+    font-size: var(--f4);
+  }
+  .v-selection-control .v-label{
+    font-weight: 500;
+    opacity: 1;
+    font-size: 20px;
+  }
+  .v-btn.button-send-otz{
+    width: 280px;
+    height: 54px;
+    background: linear-gradient(88.32deg, #0b7455 0%, #06936a 100%);
+    border-radius: 15px;
+    margin: 0px;
+    box-shadow: none;
+  }
+  .v-input--error .v-messages__message{
+    font-size: 14px;
+    color: rgb(176,0,32);
+  }
+  .v-input__control * {
+    font-size: 14px;
+  }
+  .fank .v-card-actions .v-btn{
+    background: #3d7eff;
+    display: flex;
+  }
+  .fank .v-card{
+    overflow: hidden;
+  }
+  .image-comment{
+    max-height: 400px;
+  }
+  .v-dialog>.v-overlay__content>.v-card{
+    overflow: hidden;
+  }
+  .fank *{
+    text-align: center;
+  }
+  .fank .v-card-actions{
+    display: flex;
+    justify-content: center;
+  }
   .my-input {
     /* Ваши стили для полей ввода */
   }
-  
+  .v-card--variant-elevated {
+    box-shadow: none;
+}
+  .v-btn.v-btn--density-default .v-btn__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--f3);
+    font-weight: 700;
+    border-radius: 15px;
+    white-space: nowrap;
+    text-transform: none;
+    color: #fff;
+  }
+  .my-comments h2{
+    font-size: var(--f4);
+    color: #313654;
+    font-weight: 900;
+  }
   .my-checkbox {
     /* Ваши стили для чекбокса */
   }
@@ -32,4 +99,95 @@
   
   .my-dialog {
     /* Ваши стили для всплывающего окна */
+  }
+  .my-comments h2{
+    margin: 0px 0px 15px 0px;
+  }
+  .my-comments{
+    margin: 40px 0px 0px 0px;
+  }
+  .button-send-otz{
+    background: linear-gradient(88.32deg, #344597 0%, #496DA9 100%);
+  }
+  .exit-btn {
+    /* Добавьте стили по вашему усмотрению, например, измените цвет и стиль текста, чтобы сделать ссылку выделяющейся */
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0px 0px 0px 4px;
+  }
+  .v-selection-control__wrapper{
+    display: contents;
+  }
+  .button-send-otz:hover {
+    background: #b71313;
+    background-color: #edf3ff!important;
+    box-shadow: none;
+    border: 1px solid #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-send-otz:hover .v-btn__content{
+    color: #272727!important;
+  }
+  .v-card--variant-elevated{
+    margin: 10px 0px;
+  }
+  .image-comment{
+    object-fit: contain;
+    width: 100%;
+  }
+  @media(max-width:767px){
+    .section-comment-line{
+      margin: 60px 0px;
+    }
+  }
+
+  .section.section-bl5.form-out1 .btn-title{
+  /*  margin: 0px 0px -10px 0px;
+    padding: 15px 0px 0px 10px;*/
+   /* padding: 0px;*/
+  }
+  .form-b-b-b-t{
+    padding: 20px 0px 0px 0px;
+  }
+  .form-call .v-input__details{
+    display: none!important;
+  }
+
+  .form-call  .v-input__control *{
+    font-size: 10px;
+  }
+
+  .checkbox-content {
+    display: flex;
+    align-items: baseline;
+  }
+  .form-call .v-selection-control__input i{
+    font-size: 16px;
+  }
+  .type-btn-vue{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #8195c2;
+    position: relative;
+  }
+  .type-btn-vue img{
+    margin: 0px 10px 0px 0px;
+    position: absolute;
+
+    z-index: 1;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .type-btn-vue .v-field__field{
+    max-height: 40px;
+  }
+  .type-btn-vue .v-field__input{
+    padding: 0px 0px 0px 50px;
+    min-height: 40px;
+    background-color: #f6f6f6;
   }

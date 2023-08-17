@@ -51,12 +51,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 http_response_code(404);
 echo 'Страница не найдена';
 
-
-{ text: 'ID', key: 'ID' },
-{ text: 'ID задачи', key: 'id_task' },
-{ text: 'Роль', key: 'role' },
-{ text: 'Пользователь', key: 'user' },
-{ text: 'Просрочки', key: 'delay' },
-{ text: 'Переносы', key: 'transfer' },
-{ text: 'Учет', key: 'report' },
-{ text: 'Править', key: 'actions' }
