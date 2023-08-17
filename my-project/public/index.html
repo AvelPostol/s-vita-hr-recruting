@@ -1,17 +1,2571 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+</head>
+
+<body>
+
+  <section class="section section-main">
+    <div class="container">
+      <header>
+        <div class="header">
+          <div class="header-bottom">
+            <div class="header-bottom-ro-t">
+              <div class="header-bottom-ro-t-non"></div>
+              <a href="https://s-vitagroup.ru/" target="_blank" class="logo-link">
+                <img src="img_v2/logo.svg" alt="/" class="logo">
+              </a>
+              <div class="menu-ic ex">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="menu-w">
+              <ul>
+                <li><a href="#id1" class="header-b-link">Наши услуги</a></li>
+                <li><a href="#id2" class="header-b-link">Кейсы</a></li>
+                <li><a href="#id3" class="header-b-link">Как мы работаем</a></li>
+                <li><a href="#id4" class="header-b-link">О компании</a></li>
+                <li><a href="#app" class="header-b-link">Отзывы</a>/li>
+                <li><a href="#cont" class="header-b-link">Контакты</a></li>
+                <li><a href="tel:+78002224110" class="phone link-t"><div class="bar-li deeep">8 800 222-41-10</div></a></li>
+                <li><div class="htc-r-b"><a href="https://wa.me/+79217985022" class="htc-l1"><img src="img_v2/whatsapp.svg" alt="" class="htc-im2"></a><a href="https://t.me/SVITAHR_bot" class="htc-l2"><img src="img_v2/telegram.svg" alt="" class="htc-im3"></a></div></li>
+              </ul>
+              <div class="header-top-right ">
+                <div class="header-top-rowb header-top-rowb2">
+                  <div class="header-top-col"><img src="img_v2/topbar2.svg" alt="" class="header-icon-top"><div class="bar-li">Работаем Пн-Пт: 09:00-18:00</div></div>
+                  <div class="header-top-col"><img src="img_v2/topbar1.svg" alt="" class="header-icon-top"><a href="https://goo.gl/maps/sRAZUenx9yZTzbn76" class="link-t"><div class="bar-li">Санкт-Петербург, Петровская коса, д. 1, <br> корп. 1, лит. Р (БЦ «Петровский»)</div></a></div>
+                  <div class="exto1"><div class="btn-q ex">Отправить заявку</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-top">
+            <div class="header-top-left"><a href="https://s-vitagroup.ru/" target="_blank" class="logo-link"><img src="img_v2/logo.svg" alt="" class="logo"></a><div class="pre-title">Консалтинговая <br> рекрутинговая компания</div></div>
+            <div class="header-top-com">
+              <div class="header-top-center">
+                <div class="htc-l exto1">
+                  <a href="tel:+78002224110" class="htc-t">
+                    <img src="img_v2/telim.svg" alt="" class="htc-im1">
+                    <div class="htc-nume">8 800 222-41-10</div>
+                  </a>
+                  <div class="htc-b trige ex">Заказать обратный звонок</div>
+                </div>
+                <div class="htc-r">
+                  <div class="htc-r-t">
+                    Задайте вопрос, <br>
+                    мы онлайн!
+                  </div>
+                  <div class="htc-r-b">
+                    <a href="https://wa.me/+79217985022" class="htc-l1"><img src="img_v2/whatsapp.svg" alt="" class="htc-im2"></a>
+                    <a href="https://t.me/+79217985022" class="htc-l2"><img src="img_v2/telegram.svg" alt="" class="htc-im3"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-top-right">
+                <div class="header-top-col">
+                  <div class="header-top-rowb header-top-rowb2">
+                    <div class="header-top-coli">
+                      <img src="img_v2/block1-1-ic2.svg" alt="" class="header-icon-top">
+                      <div class="bar-li">Работаем Пн-Пт: 09:00-18:00</div>
+                    </div>
+                    <div class="header-top-coli">
+                      <img src="img_v2/block1-1-ic3.svg" alt="" class="header-icon-top">
+                      <a href="https://goo.gl/maps/sRAZUenx9yZTzbn76" class="link-t">
+                        <div class="bar-li">Санкт-Петербург, Петровская коса, д. 1, <br> корп. 1, лит. Р (БЦ
+                          «Петровский»)</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-bottom impn header-full">
+            <ul>
+              <li><a href="#id1" class="header-b-link">Наши услуги</a></li>
+              <li><a href="#id2" class="header-b-link">Кейсы</a></li>
+              <li><a href="#id3" class="header-b-link">Как мы работаем</a></li>
+              <li><a href="#id4" class="header-b-link">О компании</a></li>
+              <li><a href="#app" class="header-b-link">Отзывы</a></li>
+              <li><a href="#cont" class="header-b-link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header-topi">
+            <div class="header-topi-left">
+              <a href="https://s-vitagroup.ru/" target="_blank" class="logo-link">
+                <img src="img_v2/logo.svg" alt="" class="logo">
+              </a>
+            </div>
+            <div class="header-topi-right">
+              <div class="header-topi-row">
+                <div class="header-topi-col">
+                  <a href="tel:tel:+78002224110" class="phone link-t">
+                    <div class="bar-li">8 800 222-41-10</div>
+                  </a>
+                </div>
+                <div class="header-topi-col">
+                  <div class="bar-li">Работаем Пн-Пт: 09:00-18:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-ic ex cross-act">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+      <div class="section-cont section-cont-v1">
+        <div class="section-row section-row-l">
+          <div class="section-t">
+            <div class="section-tit nw"> Подбор топ-персонала с оплатой после трудоустройства
+            </div>
+            <div class="section-tit nm"> Подбор топ-персонала с гарантией
+            </div>
+            <div class="section-sub-tit nm"> С оплатой после трудоустройства
+            </div>
+            <div class="dopic-bl"> <div class="dopic nm"> Перезвоним и уточним <br> детали для подготовки <br> персонального <br> предложения </div>
+            </div>
+          </div>
+
+          <div class="section-b v2">
+            <div class="section-b-row">
+              <div class="section-btn-row ">
+                <div class="boom exto1">
+                  <div class="section-btn section-btn-v1 ex">Подобрать персонал</div>
+                </div>
+                <img src="img_v2/nmstr.png" alt="" class="nmstr nm">
+              </div>
+            </div>
+          </div>
+          <div class="section-c">
+
+            <div class="section-c-row">
+              <div class="section-c-row-t">
+                <div class="section-c-col">
+                  <div class="li-ic3">
+                    <img src="img_v2/isi1.svg" alt="">
+                  </div>
+                  <div class="section-c-text">
+                    От уникальных специалистов <br> до руководителей
+                  </div>
+                </div>
+
+                <div class="section-c-col">
+                  <div class="li-ic3">
+                    <img src="img_v2/isi2.svg" alt="">
+                  </div>
+                  <div class="section-c-text">
+                    21 день - средний срок <br> закрытия вакансий
+                  </div>
+                </div>
+              </div>
+              <div class="section-c-row-t">
+                <div class="section-c-col">
+                  <div class="li-ic3">
+                    <img src="img_v2/isi3.svg" alt="">
+                  </div>
+                  <div class="section-c-text">
+                    Гарантийный период на замену <br> от 1-го месяца до 1-го года
+                  </div>
+                </div>
+                <div class="section-c-col">
+                  <div class="li-ic3">
+                    <img src="img_v2/isi4.svg" alt="">
+                  </div>
+                  <div class="section-c-text">
+                    Собственная база <br> эффективных специалистов
+                  </div>
+                </div>
+              </div>
+              <div class="section-c-row-b">
+                <div class="section-c-col">
+                  <div class="li-ic3">
+                    <img src="img_v2/simb2.svg" alt="">
+                  </div>
+                  <div class="section-c-text">
+                    Индивидуальный подход <br>
+                    в выборе структуры <br>
+                    собеседования кандидата
+                  </div>
+                </div>
+                <div class="section-c-col">
+                  <div class="li-ic3">
+                    <img src="img_v2/simb3.svg" alt="">
+                  </div>
+                  <div class="section-c-text">
+                    Опытные HR-специалисты <br>
+                    во всех областях
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-b v1">
+            <div class="section-b-row">
+              <div class="section-btn-row">
+                <div class="boom exto1">
+                  <div class="section-btn section-btn-v1 ex">Подобрать персонал</div>
+                </div>
+                <div class="slimi">
+                  <img src="img_v2/sl-str.svg" alt="" class="slimi-at1">
+                  <div class="slimi-at2">
+                    Перезвоним и уточним <br> детали для подготовки <br> персонального предложения
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-row section-row-r">
+          <img src="img_v2/f1.svg" alt="" class="section-row-r-img">
+        </div>
+      </div>
+      <div class="section-cont section-cont-v2" id="id1">
+        <div class="section-row section-row-title">
+          <div class="section-row-tit">
+            Наши услуги
+          </div>
+        </div>
+        <div class="section-row">
+
+          <div class="section-colii section-colii-n">
+            <div class="section-col">
+              <div class="section-tt">
+                <div class="section-t">
+                  Подбор персонала
+                </div>
+                <div class="section-sub">
+                  Найдем лучшего игрока в вашу команду
+                </div>
+              </div>
+
+              <div class="section-c exto1">
+                <ul>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Рекрутинг - отбор, оценка кандидатов, сопровождение и помощь в адаптации
+                    </div>
+                  </li>
+
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Executive Search - целенаправленный поиск среди специалистов высокого уровня. Учитываем все особые
+                      требования, в том числе конфеденциальность. Используется при подборе топ-менеджеров, руководителей
+                      или специалистов узкого профиля
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      HeadHunting - один из видов Executive Search, проводим точечную персональную работу с
+                      претендентом. Используется, когда есть потребность в конкретном кандидате.
+                    </div>
+                  </li>
+                </ul>
+                <div class="section-btn section-btn-v12 ex">Узнать больше</div>
+              </div>
+              <div class="section-b">
+                <div class="sec-texti">
+                  Узнать больше
+                </div>
+                <img src="img_v2/block2-ic-arr.svg" alt="" class="sec-ic-arr">
+              </div>
+            </div>
+          </div>
+          <div class="section-colii section-colii-n">
+            <div class="section-col">
+              <div class="section-tt">
+                <div class="section-t">
+                  Тестирование и оценка кандидатов
+                </div>
+                <div class="section-sub">
+                  Повысим эффективность бизнеса с помощью анализа работы сотрудников
+                </div>
+              </div>
+              <div class="section-c exto1">
+                <ul>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Анализ работы текущих сотрудников компании
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Подготовка и внедрение системы оценки будущих сотрудников
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Тестирование кандидатов
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Отчетность
+                    </div>
+                  </li>
+                </ul>
+                <div class="section-btn section-btn-v12 ex">Узнать больше</div>
+              </div>
+              <div class="section-b">
+                <div class="sec-texti">
+                  Узнать больше
+                </div>
+                <img src="img_v2/block2-ic-arr.svg" alt="" class="sec-ic-arr">
+              </div>
+            </div>
+          </div>
+          <div class="section-colii section-colii-n">
+            <div class="section-col">
+              <div class="section-tt">
+                <div class="section-t">
+                  HR - консалтинг и аудит
+                </div>
+                <div class="section-sub">
+                  Организуем эффективную работу сотрудников
+                </div>
+              </div>
+              <div class="section-c exto1">
+                <ul>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Анализ и оптимизация процессов найма
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Разработка и внедрение организационной структуры компании
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Проведение тренингов и обучение сотрудников
+                    </div>
+                  </li>
+                </ul>
+                <div class="section-btn section-btn-v12 ex">Узнать больше</div>
+              </div>
+              <div class="section-b">
+                <div class="sec-texti">
+                  Узнать больше
+                </div>
+                <img src="img_v2/block2-ic-arr.svg" alt="" class="sec-ic-arr">
+              </div>
+            </div>
+          </div>
+          <div class="section-colii">
+            <div class="section-col">
+              <div class="section-tt">
+                <div class="section-t">
+                  Подготовка к инспекторской проверке
+                </div>
+                <div class="section-sub">
+                  Поможем пройти любые проверки без штрафов и предписаний
+                </div>
+              </div>
+              <div class="section-c exto1">
+                <ul>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Полный аудит кадровых документов
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Устранение всех недочетов
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Организация обучения и переквалификации сотрудников
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Инструктаж перед визитом инспекции
+                    </div>
+                  </li>
+                </ul>
+                <div class="section-btn section-btn-v12 ex">Узнать больше</div>
+              </div>
+              <div class="section-b">
+                <div class="sec-texti">
+                  Узнать больше
+                </div>
+                <img src="img_v2/block2-ic-arr.svg" alt="" class="sec-ic-arr">
+              </div>
+            </div>
+          </div>
+          <div class="section-colii">
+            <div class="section-col">
+              <div class="section-tt">
+                <div class="section-t">
+                  Анализ кадровых документов
+                </div>
+                <div class="section-sub">
+                  Выявим и устраним нарушения, повысим эффективность документооборота
+                </div>
+              </div>
+              <div class="section-c exto1">
+                <ul>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Проверка и анализ всех кадровых документов
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Устранение нарушений
+                    </div>
+                  </li>
+
+                  <li>
+                    <img src="img_v2/notpr.svg" alt="" class="img-ic-ulli">
+                    <div class="sec-text">
+                      Разработка рекомендаций по повышению эффективности
+                    </div>
+                  </li>
+                </ul>
+                <div class="section-btn section-btn-v12 ex">Узнать больше</div>
+              </div>
+              <div class="section-b">
+                <div class="sec-texti">
+                  Узнать больше
+                </div>
+                <img src="img_v2/block2-ic-arr.svg" alt="" class="sec-ic-arr">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section s3 nw">
+    <div class="container">
+      <div class="s3-dopi">
+        <img src="img_v2/dopi.png" alt="" class="s3-dopi-im">
+      </div>
+      <div class="s3-ow">
+        <div class="s3-l">
+          <div class="s3-l-t">
+            Почему рекрутинг <br> с SCG эффективнее?
+          </div>
+          <div class="s3-r-b b1">
+            При поиске специалистов мы не ограничиваемся одной площадкой. Задействуем различные рекламные каналы,
+            соцсети, участвуем в специализированных выставках, форумах и семинарах. Ведем переговоры с сотрудникам
+            компаний выбранных сфер бизнеса.
+          </div>
+          <div class="s3-r-b b2">
+            Помимо hr-менеджеров собеседования с кандидатами проводят профильные руководители определенных направлений
+            нашей компании. Таким образом мы предоставляем вам список самых сильных претендентов на должность.
+          </div>
+        </div>
+        <div class="s3-r">
+          <div class="s3-bl">
+            <div class="s3-col sp1">
+              <div class="s3-col-t ">
+                500
+              </div>
+              <div class="s3-col-b">
+                Резюме - первичная <br> база по вакансии
+              </div>
+              <div class="ki">
+                <div class="ki1">
+                  Составляем “портрет” <br> идеального кандидата, на <br> основании пожеланий <br> клиента
+                </div>
+                <img src="img_v2/ki-im1.png" alt="" class="ki-im1">
+              </div>
+            </div>
+            <div class="s3-col sp2">
+              <div class="s3-col-t">
+                80
+              </div>
+              <div class="s3-col-b">
+                Претендентов проходит <br> отбор, проверку
+              </div>
+            </div>
+            <div class="s3-col sp3">
+              <div class="s3-col-t">
+                50
+              </div>
+              <div class="s3-col-b">
+                Интервью со <br> специалистами
+              </div>
+
+              <div class="ki">
+                <div class="ki2">
+                  Проводим первичный отбор, <br> проверку, интервью, <br> собираем рекомендации с <br> предыдущих мест
+                  работы
+                </div>
+                <img src="img_v2/ki-im1.png" alt="" class="ki-im2">
+              </div>
+            </div>
+            <div class="s3-col sp4">
+              <div class="s3-col-t">
+                5
+              </div>
+              <div class="s3-col-b">
+                Кандитатов
+              </div>
+
+
+              <div class="ki">
+                <img src="img_v2/ki-im2.png" alt="" class="ki-im3">
+                <div class="ki3">
+                  Передаём вам список кандидатов, <br> успешно прошедших отбор
+                </div>
+              </div>
+
+            </div>
+            <img src="img_v2/oti.png" alt="" class="s3-col-5">
+            <div class="s3-col-texti">
+              Сотрудник выходит на <br> работу
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section s3 nm">
+    <div class="container">
+
+
+      <div class="s3-l-t">
+        Почему рекрутинг <br> с SCG эффективнее?
+      </div>
+      <div class="s3-r-b b1">
+        При поиске специалистов мы не ограничиваемся одной площадкой. Задействуем различные рекламные каналы, соцсети,
+        участвуем в специализированных выставках, форумах и семинарах. Ведем переговоры с сотрудникам компаний выбранных
+        сфер бизнеса.
+      </div>
+      <div class="s3-r-b b2">
+        Помимо hr-менеджеров собеседования с кандидатами проводят профильные руководители определенных направлений нашей
+        компании. Таким образом мы предоставляем вам список самых сильных претендентов на должность.
+      </div>
+
+      <div class="swiper3">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  1
+                </div>
+                <div class="swiper3-r">
+                  Составляем “портрет” идеального кандидата, на основании пожеланий клиента
+                </div>
+              </div>
+              <img src="img_v2/repi1.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  2
+                </div>
+                <div class="swiper3-r">
+                  Отбираем подходящих претендентов и проводим собеседования
+                </div>
+
+              </div>
+              <img src="img_v2/repi2.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  3
+                </div>
+                <div class="swiper3-r">
+                  Передаём вам список кандидатов, успешно прошедших отбор
+                </div>
+
+              </div>
+              <img src="img_v2/repi1.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  4
+                </div>
+                <div class="swiper3-r">
+                  Готовим отчётность и предоставляем гарантии после трудоустройства
+                </div>
+
+              </div>
+              <img src="img_v2/repi2.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  5
+                </div>
+                <div class="swiper3-r">
+                  Помогаем в адаптации нового сотрудника
+                </div>
+
+              </div>
+              <img src="img_v2/repi3.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="n2-st4">
+
+        <div class="nuberi">
+          <div class="kla">
+            1
+          </div>
+          <div class="ski">
+            /5
+          </div>
+        </div>
+
+        <div class="kjs">
+          <div class="n2-l">
+            <div class="swiper-pagination swiper-pagination-n4i1"></div>
+          </div>
+          <div class="n2-r">
+            <img src="img_v2/n2-pre1v.svg" alt="" class="next4i1">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section sline">
+    <div class="container">
+      <div class="sline-t">
+        Оставьте заявку и мы проверим свою базу. <br> Возможно ваш идеальный кандидат уже ждет <br> предложения
+      </div>
+      <div class="boom exto1">
+        <div class="section-btn section-btn-v1 ex">Оставить заявку</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section s3 nw">
+    <div class="container">
+      <div class="s3-dopi">
+        <img src="img_v2/dopi.png" alt="" class="s3-dopi-im">
+      </div>
+      <div class="s3-ow">
+        <div class="s3-l">
+          <div class="s3-l-t">
+            Почему рекрутинг <br> с SCG эффективнее?
+          </div>
+          <div class="s3-r-b b1">
+            При поиске специалистов мы не ограничиваемся одной площадкой. Задействуем различные рекламные каналы,
+            соцсети, участвуем в специализированных выставках, форумах и семинарах. Ведем переговоры с сотрудникам
+            компаний выбранных сфер бизнеса.
+          </div>
+          <div class="s3-r-b b2">
+            Помимо hr-менеджеров собеседования с кандидатами проводят профильные руководители определенных направлений
+            нашей компании. Таким образом мы предоставляем вам список самых сильных претендентов на должность.
+          </div>
+        </div>
+        <div class="s3-r">
+          <div class="s3-bl">
+            <div class="s3-col sp1">
+              <div class="s3-col-t ">
+                500
+              </div>
+              <div class="s3-col-b">
+                Резюме - первичная <br> база по вакансии
+              </div>
+              <div class="ki">
+                <div class="ki1">
+                  Составляем “портрет” <br> идеального кандидата, на <br> основании пожеланий <br> клиента
+                </div>
+                <img src="img_v2/ki-im1.png" alt="" class="ki-im1">
+              </div>
+            </div>
+            <div class="s3-col sp2">
+              <div class="s3-col-t">
+                80
+              </div>
+              <div class="s3-col-b">
+                Претендентов проходит <br> отбор, проверку
+              </div>
+            </div>
+            <div class="s3-col sp3">
+              <div class="s3-col-t">
+                50
+              </div>
+              <div class="s3-col-b">
+                Интервью со <br> специалистами
+              </div>
+
+              <div class="ki">
+                <div class="ki2">
+                  Проводим первичный отбор, <br> проверку, интервью, <br> собираем рекомендации с <br> предыдущих мест
+                  работы
+                </div>
+                <img src="img_v2/ki-im1.png" alt="" class="ki-im2">
+              </div>
+            </div>
+            <div class="s3-col sp4">
+              <div class="s3-col-t">
+                5
+              </div>
+              <div class="s3-col-b">
+                Кандитатов
+              </div>
+
+
+              <div class="ki">
+                <img src="img_v2/ki-im2.png" alt="" class="ki-im3">
+                <div class="ki3">
+                  Передаём вам список кандидатов, <br> успешно прошедших отбор
+                </div>
+              </div>
+
+            </div>
+            <img src="img_v2/oti.png" alt="" class="s3-col-5">
+            <div class="s3-col-texti">
+              Сотрудник выходит на <br> работу
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section s3 nm">
+    <div class="container">
+
+
+      <div class="s3-l-t">
+        Почему рекрутинг <br> с SCG эффективнее?
+      </div>
+      <div class="s3-r-b b1">
+        При поиске специалистов мы не ограничиваемся одной площадкой. Задействуем различные рекламные каналы, соцсети,
+        участвуем в специализированных выставках, форумах и семинарах. Ведем переговоры с сотрудникам компаний выбранных
+        сфер бизнеса.
+      </div>
+      <div class="s3-r-b b2">
+        Помимо hr-менеджеров собеседования с кандидатами проводят профильные руководители определенных направлений нашей
+        компании. Таким образом мы предоставляем вам список самых сильных претендентов на должность.
+      </div>
+
+      <div class="swiper3">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  1
+                </div>
+                <div class="swiper3-r">
+                  Составляем “портрет” идеального кандидата, на основании пожеланий клиента
+                </div>
+              </div>
+              <img src="img_v2/repi1.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  2
+                </div>
+                <div class="swiper3-r">
+                  Отбираем подходящих претендентов и проводим собеседования
+                </div>
+
+              </div>
+              <img src="img_v2/repi2.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  3
+                </div>
+                <div class="swiper3-r">
+                  Передаём вам список кандидатов, успешно прошедших отбор
+                </div>
+
+              </div>
+              <img src="img_v2/repi1.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  4
+                </div>
+                <div class="swiper3-r">
+                  Готовим отчётность и предоставляем гарантии после трудоустройства
+                </div>
+
+              </div>
+              <img src="img_v2/repi2.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+
+
+          <div class="swiper-slide">
+            <div class="slidi">
+              <div class="swiper3-t">
+                <div class="swiper3-l">
+                  5
+                </div>
+                <div class="swiper3-r">
+                  Помогаем в адаптации нового сотрудника
+                </div>
+
+              </div>
+              <img src="img_v2/repi3.png" alt="" class="imper">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="n2-st4">
+
+        <div class="nuberi">
+          <div class="kla">
+            1
+          </div>
+          <div class="ski">
+            /5
+          </div>
+        </div>
+
+        <div class="kjs">
+          <div class="n2-l">
+            <div class="swiper-pagination swiper-pagination-n4i1"></div>
+          </div>
+          <div class="n2-r">
+            <img src="img_v2/n2-pre1v.svg" alt="" class="next4i1">
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section class="section sline">
+    <div class="container">
+      <div class="sline-t">
+        Оставьте заявку и мы проверим свою базу. <br> Возможно ваш идеальный кандидат уже ждет <br> предложения
+      </div>
+      <div class="boom exto1">
+        <div class="section-btn section-btn-v1 ex">Оставить заявку</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section n2" id="id2">
+    <div class="container">
+
+      <div class="n2-bl">
+
+
+
+
+        <div class="n2-title">
+          Наши кейсы
+        </div>
+
+        <div class="section-bl11-b-slider">
+
+          <div class="swiper2">
+            <div class="swiper-wrapper">
+
+
+
+              <div class="swiper-slide">
+
+                <div class="n2-contain">
+                  <div class="n2-st1">
+                    <div class="n2-l">
+
+                    </div>
+                    <div class="n2-r">
+                      <div class="n2-t">
+                        Руководитель отдела продаж <br> юридической фирмы
+                      </div>
+                      <div class="n2-b">
+                        Мы поддерживаем связь с подобранным специалистом и компанией на протяжении 6-ти <br>
+                        месяцев. Отслеживаем процесс адаптации сотрудника, в случае проблем - предлагаем <br>
+                        решение или производим бесплатную замену на другого кандидата.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n2-st2">
+                    <div class="n2-l">
+                      <div class="n2-c">
+                        <div class="n2-c-t">
+                          Требования
+                        </div>
+                        <div class="n2-c-b">
+                          РОП с опытом работы в юридической сфере от 5 лет, пониманием В2В - рынка.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n2-r">
+                      <div class="n2-c">
+                        <div class="n2-c-t">
+                          Сделано
+                        </div>
+                        <div class="n2-c-b">
+                          Составлен портрет кандидата, разработана стратегия поиска, подготовлено задание на поиск.
+                        </div>
+                      </div>
+                      <div class="n2-c">
+                        <div class="n2-c-t">
+                          Результат
+                        </div>
+                        <div class="n2-c-b">
+                          Подобран РОП, отвечающий требованиям заказчика. Учтены запросы по компетенциям, опыту работу,
+                          личным и деловым качествам.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n2-st3 nw">
+                    <div class="n2-st3-l">
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          1012+
+                        </div>
+                        <div class="n3-c-b">
+                          Просмотров объявлений за 14 дней
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n2-st3-r">
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          109+
+                        </div>
+                        <div class="n3-c-b">
+                          Получено в результате откликов и холодного поиска
+                        </div>
+                      </div>
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          17
+                        </div>
+                        <div class="n3-c-b">
+                          Кандидатов прошли интревью и рекомендованы заказчику.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n2-st3 nw">
+                    <div class="n2-st3-l">
+
+                    </div>
+                    <div class="n2-st3-r">
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          3
+                        </div>
+                        <div class="n3-c-b">
+                          Кандидата отобрано в резерв
+                        </div>
+                      </div>
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          1
+                        </div>
+                        <div class="n3-c-b">
+                          Сотрудник трудоустроен в компанию
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n2-st3 nm">
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        1012+
+                      </div>
+                      <div class="n3-c-b">
+                        Просмотров объявлений за 14 дней
+                      </div>
+                    </div>
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        109+
+                      </div>
+                      <div class="n3-c-b">
+                        Получено в результате откликов и холодного поиска
+                      </div>
+                    </div>
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        17
+                      </div>
+                      <div class="n3-c-b">
+                        Кандидатов прошли интревью и рекомендованы заказчику.
+                      </div>
+                    </div>
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        3
+                      </div>
+                      <div class="n3-c-b">
+                        Кандидата отобрано в резерв
+                      </div>
+                    </div>
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        1
+                      </div>
+                      <div class="n3-c-b">
+                        Сотрудник трудоустроен в компанию
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+
+                <div class="n2-contain">
+                  <div class="n2-st1">
+                    <div class="n2-l">
+
+                    </div>
+                    <div class="n2-r">
+                      <div class="n2-t">
+                        Директор информационных <br> технологий производственной <br> компании
+                      </div>
+                      <div class="n2-b">
+                        1 выход на работу и 1 - резерв, 4 претендента не удовлетворили требования заказчика, 1 -
+                        отказался по различным причинам.
+
+                        <br>
+                        <br>
+                        В течении 12-ти месяцев поддерживали связь с подобранным сотрудником и заказчиком. Помогли
+                        быстро найти подход к подчиненным и выстроить коммуникацию. На случай отказа, держали в резерве
+                        1 претендента для быстрой и бесплатной замены.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n2-st2">
+                    <div class="n2-l">
+                      <div class="n2-c">
+                        <div class="n2-c-t">
+                          Требования
+                        </div>
+                        <div class="n2-c-b">
+                          Опыт работы руководителем подразделения IТ/директором департамента IТ от 2 лет в
+                          производственной компании, Английский язык C1, лидерские качества.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n2-r">
+                      <div class="n2-c">
+                        <div class="n2-c-t">
+                          Сделано
+                        </div>
+                        <div class="n2-c-b">
+                          Проведен анализ рынка, выработан план подбора. Разработан первичный тест и чек-лист идеального
+                          кандидата.
+                        </div>
+                      </div>
+                      <div class="n2-c">
+                        <div class="n2-c-t">
+                          Результат
+                        </div>
+                        <div class="n2-c-b">
+                          Новый Директор быстро адаптировался в компании и нашёл общий язык с подчиненными. Условия
+                          сотрудничества и система мотивации полностью удовлетворили кандидата.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="n2-st3 ny">
+                    <div class="n2-st3-l">
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          769+
+                        </div>
+                        <div class="n3-c-b">
+                          Просмотров объявлений за 16 дней
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n2-st3-r">
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          81+
+                        </div>
+                        <div class="n3-c-b">
+                          Получено в результате откликов и холодного поиска
+                        </div>
+                      </div>
+                      <div class="n3-c">
+                        <div class="n3-c-t">
+                          7
+                        </div>
+                        <div class="n3-c-b">
+                          Прошли тестирование, интервью и рекомендованы заказчику
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="n2-st3 die">
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        769+
+                      </div>
+                      <div class="n3-c-b">
+                        Просмотров объявлений за 16 дней
+                      </div>
+                    </div>
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        81+
+                      </div>
+                      <div class="n3-c-b">
+                        Получено в результате откликов и холодного поиска
+                      </div>
+                    </div>
+                    <div class="n3-c">
+                      <div class="n3-c-t">
+                        7
+                      </div>
+                      <div class="n3-c-b">
+                        Прошли тестирование, интервью и рекомендованы заказчику
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="n2-st4">
+          <div class="n2-l">
+            <div class="n2-btn n2-prev">
+              Следующий кейс
+            </div>
+          </div>
+          <div class="n2-r">
+            <img src="img_v2/n2-prev.svg" alt="" class="n2-next">
+            <img src="img_v2/n2-next.svg" alt="" class="n2-prev">
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section s4">
+    <div class="container">
+      <div class="s4-t">
+        Почему наши клиенты доверяют нам
+      </div>
+      <div class="s4-b">
+        <div class="s4-row">
+          <div class="s4-col">
+            <div class="s4-l">
+              7
+            </div>
+            <div class="s4-r">
+              Директоров различных направлений <br> нашей компании проводят <br> собеседования с кандидатами на <br>
+              руководящие позиции
+            </div>
+          </div>
+        </div>
+
+        <div class="s4-row">
+          <div class="s4-col">
+            <div class="s4-l">
+              20
+            </div>
+            <div class="s4-r">
+              Дней - средний срок <br> закрытия вакансии
+            </div>
+          </div>
+        </div>
+
+
+        <div class="s4-row">
+          <div class="s4-col">
+            <div class="s4-l">
+              0
+            </div>
+            <div class="s4-r">
+              Рублей вы платите до момента <br> выхода сотрудника на работу
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section n4">
+    <div class="container">
+
+      <div class="n4-l">
+
+        <div class="n4-l-t">
+          Преимущества
+        </div>
+        <img src="img_v2/n4-im1.svg" alt="" class="n4-l-c">
+        <img src="img_v2/n4-im2.svg" alt="" class="n4-l-b">
+
+      </div>
+      <div class="n4-r">
+        <div class="n4-r-t">
+          <li>
+            Оплата только после трудоустройства
+          </li>
+          <li>
+            Гарантийный период до 1-го года
+          </li>
+          <li>
+            1 бесплатная замена в случае увольнения сотрудника
+          </li>
+        </div>
+        <div class="n4-r-b nw">
+
+
+          <div class="n4-r-b-row one">
+            <div class="n4-r-b-l">
+              Компетентность
+            </div>
+            <div class="n4-r-b-r">
+              <div class="n4-r-b-i1">
+                Мы включаем участие наших экспертов высокого уровня в процесс отбора кандидатов. Это может быть
+                финансовый директор, руководитель юридического направления, директор по персоналу или IT-директор,
+                которые смогут оценить компетенции кандидатов и помочь вам найти того, кто идеально подходит для вашей
+                компании
+              </div>
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+          <div class="n4-r-b-row">
+            <div class="n4-r-b-l">
+              Скорость
+            </div>
+            <div class="n4-r-b-r">
+              <div class="n4-r-b-i1">
+                Мы понимаем, что нахождение подходящего кандидата может занять много времени, в то время как бизнес
+                будет терять деньги. Благодаря накопленной базе и опыту, мы можем закрывать даже сложные позиции в
+                течение нескольких недель.
+              </div>
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+          <div class="n4-r-b-row">
+            <div class="n4-r-b-l">
+              Оплата за результат
+            </div>
+            <div class="n4-r-b-r">
+              <div class="n4-r-b-i1">
+                Оплачивайте услугу после трудоустройства, без предоплата и изменений стоимости
+              </div>
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+          <div class="n4-r-b-row">
+            <div class="n4-r-b-l">
+              Актуальность
+            </div>
+            <div class="n4-r-b-r">
+              <div class="n4-r-b-i1">
+                Отслеживаем все изменения законодательства в сфере трудового права и оперативно реагируем на изменения.
+                Мы также постоянно анализируем вакансии, чтобы обеспечить вам всестороннюю информацию по рынку труда и
+                дать возможность принимать оптимальные HR-решения.
+              </div>
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="n4-r-b nm">
+
+
+          <div class="n4-r-b-row one">
+            <div class="ji">
+              <div class="n4-r-b-l">
+                Компетентность
+              </div>
+              <div class="n4-r-b-i1">
+                Мы включаем участие наших экспертов высокого уровня в процесс отбора кандидатов. Это может быть
+                финансовый директор, руководитель юридического направления, директор по персоналу или IT-директор,
+                которые смогут оценить компетенции кандидатов и помочь вам найти того, кто идеально подходит для вашей
+                компании
+              </div>
+            </div>
+
+            <div class="n4-r-b-r">
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+          <div class="n4-r-b-row">
+            <div class="ji">
+              <div class="n4-r-b-l">
+                Скорость
+              </div>
+              <div class="n4-r-b-i1">
+                Мы понимаем, что нахождение подходящего кандидата может занять много времени, в то время как бизнес
+                будет терять деньги. Благодаря накопленной базе и опыту, мы можем закрывать даже сложные позиции в
+                течение нескольких недель.
+              </div>
+            </div>
+
+            <div class="n4-r-b-r">
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+          <div class="n4-r-b-row">
+            <div class="ji">
+              <div class="n4-r-b-l">
+                Оплата за результат
+              </div>
+              <div class="n4-r-b-i1">
+                Оплачивайте услугу после трудоустройства, без предоплата и изменений стоимости
+              </div>
+            </div>
+            <div class="n4-r-b-r">
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+          <div class="n4-r-b-row">
+            <div class="ji">
+              <div class="n4-r-b-l">
+                Актуальность
+              </div>
+              <div class="n4-r-b-i1">
+                Отслеживаем все изменения законодательства в сфере трудового права и оперативно реагируем на изменения.
+                Мы также постоянно анализируем вакансии, чтобы обеспечить вам всестороннюю информацию по рынку труда и
+                дать возможность принимать оптимальные HR-решения.
+              </div>
+            </div>
+            <div class="n4-r-b-r">
+              <img src="img_v2/n4-r-b-i2.svg" alt="" class="n4-r-b-i2">
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section n5">
+    <div class="containei">
+      <div class="container">
+
+        <div class="n5-l">
+          <div class="n5-t">
+            Долго не можете найти подходящие кадры? <br> Закажите бесплатный мониторинг рынка труда! <br>
+          </div>
+          <div class="n5-b">
+            Мы проведем анализ предложений конкурентов, <br> дадим оценку системам мотивации, условиям работы
+            специалиста <br> и составим пошаговый план поиска сотрудника.
+          </div>
+        </div>
+        <div class="n5-r">
+          <section class="section form-well base" date-nameform="base">
+
+            <form action="/call.php" class="form-call " method="post" novalidate="novalidate" id="form7">
+
+              <input type="tel" class="maininput totel cl-tel-er-btn-i" name="tel" placeholder="Телефон"
+                date-nameform="base">
+              <input type="text" class="maininput toname cl-name-er-btn-i" name="name" placeholder="Ваше имя"
+                date-nameform="base">
+              <div class="section-btn section-btn-v1 submit form-main-b1 tosendi" date-nameform="base">Заказать
+                мониторинг</div>
+
+            </form>
+          </section>
+        </div>
+
+        <div class="n5-r-i">
+          <div class="boom exto1">
+            <div class="section-btn section-btn-v1 ex">Оставить заявку</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section n6" id="id4">
+    <div class="container">
+
+      <div class="n6-l">
+        <div class="n6-t">
+          <div class="n6-tt">
+            S-Vita Consulting Group
+            поддерживает развитие и устойчивое функционирование малого и среднего бизнеса
+          </div>
+          <div class="n6-tb">
+            <div class="n6-tb-i">
+              В компании работает более 30 высококвалифицированных сотрудников, способных решать задачи любой сложности.
+            </div>
+            <div class="n6-tb-p">
+              Накопленный опыт, индивидуальный подход к клиентам, знание различных отраслей деятельности помогают нам
+              оказывать услуги на высочайшем уровне.
+            </div>
+          </div>
+
+          <div class="nmi">
+            <img src="img_v2/imgh1.png" alt="" class="imgh">
+            <img src="img_v2/imgh2.png" alt="" class="imgh">
+          </div>
+        </div>
+        <div class="n6-b">
+          <div class="n6-row">
+            <div class="n6-bt">
+              27
+            </div>
+            <div class="n6-bb">
+              Топ-менеджера <br> подобрали за 2022 год <br> без замены по <br> гарантии
+            </div>
+          </div>
+
+          <div class="n6-row">
+            <div class="n6-bt">
+              50
+            </div>
+            <div class="n6-bb">
+              Источников для поиска <br> сотрудников <br> используют наши <br> эксперты
+            </div>
+          </div>
+
+          <div class="n6-row">
+            <div class="n6-bt">
+              5
+            </div>
+            <div class="n6-bb">
+              Основных направлений <br> деятельности холдинга <br> обеспечивают <br> комплексный <br> всесторонний
+              подход к <br> решению задач
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="n6-r">
+        <img src="img_v2/n6-im.png" alt="" class="n6-im">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section n7" id="id3">
+    <div class="container">
+      <div class="n7-title">
+        Как мы работаем?
+      </div>
+      <div class="n7-com nw">
+        <div class="n7-row">
+          <div class="n7-im-box">
+            <div class="numen7">
+              01
+            </div>
+            <img src="img_v2/imn7_1.svg" alt="" class="n7-im">
+          </div>
+
+          <div class="n7-tit">
+            Оставляете заявку на сайте
+          </div>
+          <div class="n7-texti">
+            Менеджер свяжется с вами для обсуждения задачи.
+          </div>
+        </div>
+
+        <div class="n7-row">
+          <div class="n7-im-box">
+            <div class="numen7">
+              02
+            </div>
+            <img src="img_v2/imn7_2.svg" alt="" class="n7-im">
+          </div>
+
+          <div class="n7-tit">
+            Анализ вакансии и рынка труда
+          </div>
+          <div class="n7-texti">
+            Разрабатываем стратегию подбора, проводим анализ рынка вакансий, прорабатываем ключевые пункты резюме.
+          </div>
+        </div>
+
+        <div class="n7-row">
+          <div class="n7-im-box">
+            <div class="numen7">
+              03
+            </div>
+            <img src="img_v2/imn7_3.svg" alt="" class="n7-im">
+          </div>
+
+          <div class="n7-tit">
+            Заключение договора
+          </div>
+          <div class="n7-texti">
+            Уточняем детали по вакансии, проводим анализ рынка вакансий, разрабатываем стратегию подбора
+          </div>
+        </div>
+
+        <div class="n7-row">
+          <div class="n7-im-box">
+            <div class="numen7">
+              04
+            </div>
+            <img src="img_v2/imn7_4.svg" alt="" class="n7-im">
+          </div>
+
+          <div class="n7-tit">
+            Подбор
+          </div>
+          <div class="n7-texti">
+            Ищем кандидатов по внутренним базам и внешним источникам, проводим отбор и тестирование. Представляем
+            финальных кандидатов заказчику и помогаем принять решение.
+          </div>
+        </div>
+
+        <div class="n7-row">
+          <div class="n7-im-box">
+            <div class="numen7">
+              05
+            </div>
+            <img src="img_v2/imn7_5.svg" alt="" class="n7-im">
+          </div>
+
+          <div class="n7-tit">
+            Сопровождение
+          </div>
+          <div class="n7-texti">
+            Помогаем адаптироваться сотруднику и поддерживаем связь с заказчиком.
+          </div>
+        </div>
+
+        <div class="n7-row">
+          <div class="n7-im-box">
+            <div class="numen7">
+              06
+            </div>
+            <img src="img_v2/imn7_6.svg" alt="" class="n7-im">
+          </div>
+
+          <div class="n7-tit">
+            Гарантийный период
+          </div>
+          <div class="n7-texti">
+            Бесплатно производим одну замену в случае увольнения сотрудника
+          </div>
+        </div>
+
+      </div>
+
+      <div class="n7-com nm">
+
+
+        <div class="swiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="n7-row">
+                <div class="n7-im-box">
+                  <div class="numen7">
+                    01
+                  </div>
+                  <img src="img_v2/imn7_1.svg" alt="" class="n7-im">
+                </div>
+
+                <div class="n7-tit">
+                  Оставляете заявку на сайте
+                </div>
+                <div class="n7-texti">
+                  Менеджер свяжется с вами для обсуждения задачи.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="n7-row">
+                <div class="n7-im-box">
+                  <div class="numen7">
+                    02
+                  </div>
+                  <img src="img_v2/imn7_2.svg" alt="" class="n7-im">
+                </div>
+
+                <div class="n7-tit">
+                  Анализ вакансии и рынка труда
+                </div>
+                <div class="n7-texti">
+                  Разрабатываем стратегию подбора, проводим анализ рынка вакансий, прорабатываем ключевые пункты резюме.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="n7-row">
+                <div class="n7-im-box">
+                  <div class="numen7">
+                    03
+                  </div>
+                  <img src="img_v2/imn7_3.svg" alt="" class="n7-im">
+                </div>
+
+                <div class="n7-tit">
+                  Заключение договора
+                </div>
+                <div class="n7-texti">
+                  Уточняем детали по вакансии, проводим анализ рынка вакансий, разрабатываем стратегию подбора
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="n7-row">
+                <div class="n7-im-box">
+                  <div class="numen7">
+                    04
+                  </div>
+                  <img src="img_v2/imn7_4.svg" alt="" class="n7-im">
+                </div>
+
+                <div class="n7-tit">
+                  Подбор
+                </div>
+                <div class="n7-texti">
+                  Ищем кандидатов по внутренним базам и внешним источникам, проводим отбор и тестирование. Представляем
+                  финальных кандидатов заказчику и помогаем принять решение.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="n7-row">
+                <div class="n7-im-box">
+                  <div class="numen7">
+                    05
+                  </div>
+                  <img src="img_v2/imn7_5.svg" alt="" class="n7-im">
+                </div>
+
+                <div class="n7-tit">
+                  Сопровождение
+                </div>
+                <div class="n7-texti">
+                  Помогаем адаптироваться сотруднику и поддерживаем связь с заказчиком.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="n7-row">
+                <div class="n7-im-box">
+                  <div class="numen7">
+                    06
+                  </div>
+                  <img src="img_v2/imn7_6.svg" alt="" class="n7-im">
+                </div>
+
+                <div class="n7-tit">
+                  Гарантийный период
+                </div>
+                <div class="n7-texti">
+                  Бесплатно производим одну замену в случае увольнения сотрудника
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="n2-st4">
+
+          <div class="nuberi">
+            <div class="kla1">
+              1
+            </div>
+            <div class="ski">
+              /6
+            </div>
+          </div>
+
+          <div class="kjs1">
+            <div class="n2-l">
+              <div class="swiper-pagination swiper-pagination-n4ias"></div>
+            </div>
+            <div class="n2-r">
+              <img src="img_v2/n2-pre1v.svg" alt="" class="next4i1">
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <div id="app"></div>
+
+
+  <section class="section s-cl  ">
+    <div class="container">
+      <div class="s-cl-title">
+        Наши клиенты
+      </div>
+      <div class="s-cl-bl">
+
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company1.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company2.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company3.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company4.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company5.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company6.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company7.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company8.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company9.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company10.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company11.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company12.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company13.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company14.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+        <div class="s-cl-row ">
+          <div class="s-cl-col">
+            <img src="/im/company15.png" alt="" class="s-cl-im s-cl-im-d">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-bl11" id="id4">
+    <div class="container">
+      <div class="section-bl11-container">
+
+        <div class="section-bl11-b">
+
+          <div class="section-bl11-t">
+
+            <div class="section-bl11-b-title">
+              Наша команда
+            </div>
+            <div class="section-bl11-title-line"></div>
+          </div>
+
+
+          <div class="section-bl11-b-slider">
+            <div class="sl-linearr">
+              <div class="swiper-button-prev1"><img src="img_v2/kv-b-tab-to-arr1.svg" alt=""></div>
+              <div class="swiper-button-next1"><img src="img_v2/kv-b-tab-to-arr2.svg" alt=""></div>
+            </div>
+            <div class="swiper1">
+              <div class="swiper-wrapper">
+
+
+
+                <div class="swiper-slide">
+                  <div class="swiper-slid-row">
+                    <div class="swiper-slid-col">
+                      <img src="img_v2/person1.png" alt="" class="swiper-slid-im">
+                      <div class="swiper-slid-tit">
+                        Юлия Бялкова
+                      </div>
+                      <div class="swiper-slid-text">
+                        Руководитель отдела <br> кадрового делопроизводства <br> и рекрутинга
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slid-row">
+                    <div class="swiper-slid-col">
+                      <img src="img_v2/person3.png" alt="" class="swiper-slid-im">
+                      <div class="swiper-slid-tit">
+                        Елена Кара
+                      </div>
+                      <div class="swiper-slid-text">
+                        Специалист кадрового <br> делопроизводства
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="swiper-slide">
+                  <div class="swiper-slid-row">
+                    <div class="swiper-slid-col">
+                      <img src="img_v2/person2.png" alt="" class="swiper-slid-im">
+                      <div class="swiper-slid-tit">
+                        Алина Макарова
+                      </div>
+                      <div class="swiper-slid-text">
+                        HR-специалист
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="swiper-slid-row">
+                    <div class="swiper-slid-col">
+                      <img src="img_v2/per8.png" alt="" class="swiper-slid-im">
+                      <div class="swiper-slid-tit">
+                        Мираслава Котенко
+                      </div>
+                      <div class="swiper-slid-text">
+                        Специалист кадрового <br> делопроизводства
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="swiper-slide">
+                  <div class="swiper-slid-row">
+                    <div class="swiper-slid-col">
+                      <img src="img_v2/person4.png" alt="" class="swiper-slid-im">
+                      <div class="swiper-slid-tit">
+                        Анна Урусова
+                      </div>
+                      <div class="swiper-slid-text">
+                        Финансовый директор
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slid-row">
+                    <div class="swiper-slid-col">
+                      <img src="img_v2/person5.png" alt="" class="swiper-slid-im">
+                      <div class="swiper-slid-tit">
+                        Наталья Адылова
+                      </div>
+                      <div class="swiper-slid-text">
+                        Главный бухгалтер
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="swiper-pagination swiper-pagination-2"></div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section fank">
+    <div class="container">
+      <div class="fank-cont">
+        <div class="fank-t">
+          <img src="img_v2/fanksatrmore1.svg" alt="" class="img-fan-t img-fan-tl">
+          <img src="img_v2/fanksatr.svg" alt="" class="img-fan">
+          <img src="img_v2/fanksatrmore2.svg" alt="" class="img-fan-t img-fan-tr">
+        </div>
+        <div class="fank-c">
+          <div class="tit">
+            Спасибо за заявку!
+          </div>
+          <div class="text">
+            Мы свяжемся с вами в <br> ближайшее время!
+          </div>
+        </div>
+        <div class="fank-b">
+          <a href="#form" class="menu-a-btn">
+            <div class="btn-out">
+              <div class="btn-in">
+                Закрыть
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bl5 form-out form-out1 hidden">
+    <div class="container">
+
+      <section class="section form-well base-up" date-nameform="base-up">
+
+        <form action="/call.php" class="form-call " method="post" novalidate="novalidate" id="form7">
+
+
+
+          <div class="sp-bl1">
+            <div class="ex exto1">
+              <img src="img_v2/ex.svg" alt="/" class="ex">
+            </div>
+            <div class="form-t">
+              <div class="titlesp">
+                Получить бесплатную консультацию
+              </div>
+            </div>
+            <div class="form-b-b-b">
+              <div class="form-b-b-b-t">
+
+
+
+                <div class="btn-title">
+                  ФИО/Компания*
+                </div>
+                <div class="type-btn cl-name-er-btn-i">
+                  <img src="img_v2/icim1.svg" alt="" class="icon-vm1">
+                  <input type="text" class="maininput toname" name="name" placeholder="Имя" date-nameform="base-up">
+                </div>
+
+
+
+                <div class="btn-title">
+                  Телефон*
+                </div>
+                <div class="type-btn cl-tel-er-btn-i">
+                  <img src="img_v2/icim10.svg" alt="" class="icon-vm1">
+                  <input type="tel" class="maininput totel" name="tel" placeholder="8 (904) 200-54-95"
+                    date-nameform="base-up">
+                  <input type="text" class="lov2" name="tel" style="max-height: 0px; max-width: 0px; opacity: 0px;">
+                </div>
+
+
+
+
+                <div class="btn-title">
+                  Кого ищем/специальность
+                </div>
+                <div class="type-btn">
+                  <img src="img_v2/icim1.svg" alt="" class="icon-vm1">
+                  <input type="text" class="maininput tosubname" name="subname" placeholder="Бухгалтер"
+                    date-nameform="base-up">
+                </div>
+
+
+
+              </div>
+              <div class="form-b-b-b-b" date-nameform="base-up">
+                <div class="section-btn section-btn-v1 submit form-main-b1 tosendi" date-nameform="base-up">Начать
+                  работу</div>
+                <div class="polzi hidden">требуется согласие с политикой конфиденциальности</div>
+                <div class="polz-bl">
+                  <div type="text" class="polzinput" date-nameform="base-up"></div>
+                  <img src="img_v2/icim7.svg" alt="" class="polz1">
+                  <img src="img_v2/icim77.svg" alt="" class="polz2 hidden">
+                  <div class="polz">С <span class="exit-btn">политикой конфиденциальности </span> ознакомлен(а)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </form>
+      </section>
+    </div>
+  </section>
+
+
+  <section class="section polssog hidden " id="out" ref="polssog">
+    <div class="sogl-block" id="in">
+      <div class="sogl-top">
+        <div class="title">
+          Согласие посетителя сайта на обработку персональных данных
+        </div>
+        <div class="exit exit-btn" style="color:#000;">
+          X
+        </div>
+
+      </div>
+      <div class="text">
+        Субъект персональных данных, настоящим и в соответствии с Федеральным законом от 27 июля 2006 года № 152 «О
+        персональных данных» предоставляет согласие на автоматизированную и неавтоматизированную обработку персональных
+        данных, в том числе указанных и собранных на сайте в сети «Интернет» @s-vita-hr.ru, владельцем которого является
+        ООО «С-Вита» КПП:781301001 ОГРН:1197847047947 ИНН:7813631799 номер: <a href="tel:+78125613536">+7 812
+          561-35-36</a> <a href="tel:+79215897715" style="display: none;">+7 921 589-77-15</a>, юридический адрес: <a
+          href="tel:+79215897715" style="display: none;">+7 921 589-77-15</a>, город Санкт-Петербург, коса Петровская,
+        д. 1, к. 1, литер Р, помещ.
+        32-Н, офис 101 далее Оператор.
+        Оператор обрабатывает персональные данные в соответствии с требованиями Федерального закона от 27 июля 2006 года
+        №
+        152 «О персональных данных» и иных нормативных правовых актов Российской Федерации в области персональных
+        данных,
+        а также гарантирует соблюдение конфиденциальности в отношении полученных персональных данных и принимает все
+        необходимые меры для защиты персональных данных.
+        Если во время посещения сайта Вы принимаете решение зарегистрироваться или предоставить Ваши персональные данные
+        через заполнение формы на сайте, либо через направление ваших персональных данных на почту корпоративную почту
+        Оператора, заканчивающуюся на @s-vita-hr.ru, тем самым Вы даете свое безоговорочное согласие на использование
+        указанной информации Оператором; в случае несогласия с этими условиями Вам следует воздержаться от использования
+        сервисов.
+        Оператор обрабатывает такие персональные данные, как фамилия, имя, отчество, дата рождения, почтовый адрес,
+        номер
+        телефона, адрес электронной почты, а также иные типовые данные, которые могут содержать информацию о
+        персональных
+        данных: данные о пользовательском устройстве (среди которых разрешение,
+        версия и другие атрибуты, характеризующие пользовательское устройство), источник захода на сайт s-vita-hr.ru и
+        информация поискового или рекламного запроса, пользовательские клики, просмотры страниц, заполнения полей,
+        показы
+        и просмотры баннеров и видео на сайте, данные, характеризующие аудиторные сегменты, параметры сессии, данные о
+        времени посещения сайта, идентификатор пользователя, хранимый в cookie, типовые данные используются в
+        статистических целях для более эффективного управления сайтом и настройке интерфейса,
+        а также в целях оптимизации рекламы. Целью обработки персональных данных является: направление справочной и
+        маркетинговой информации, посредством направления сообщений на адрес электронной почты, указанной субъектом
+        персональных данных на сайте, либо при направлении на корпоративную электронную почту Оператора, заканчивающуюся
+        на @s-vitaur.ru; предоставление обратной связи с Оператором; предоставление консультаций по вопросам
+        направленным
+        Оператору, консультаций касающихся оказываемых услуг,
+        в целях маркетинговой деятельности, а также в иных целях, не противоречащих действующему законодательству
+        Российской Федерации.
+        Оператор в ходе обработки персональных данных может осуществлять сбор, запись, систематизацию, накопление,
+        хранение, уточнение (обновление, изменение), извлечение, использование, обезличивание, блокирование, удаление,
+        уничтожение персональных данных.
+        Оператор не вправе передавать персональные данные третьим лицам без согласия субъекта персональных данных, за
+        исключением работников Оператора (с целью обработки данных и подготовки запрашиваемых документов на сайте) при
+        обеспечении конфиденциальности и при соблюдении требований Федерального закона от 27 июля 2006 года № 152 «О
+        персональных данных», а также в случаях, прямо предусмотренных действующим законодательством Российской
+        Федерации.
+        Согласие на обработку персональных данных действует весь срок необходимый Оператору для достижения целей
+        обработки.
+        По достижению целей/истечения периода для обработки персональных данных персональные данные уничтожаются
+        Оператором.
+        Также субъект персональных данных вправе в любой период времени отозвать согласие на обработку персональных
+        данных
+        путем направления письменного заявления по адресу: <a href="tel:+79215897715" style="display: none;">+7 921
+          589-77-15</a>, город Санкт-Петербург, коса Петровская, д. 1, к. 1, литер Р, помещ. 32-Н, офис 101.
+        Во всем остальном, что не оговорено в настоящем согласии регулируется действующим законодательством Российской
+        Федерации о персональных данных.
+
+      </div>
+      <div class="button exit-btn">
+        Принять
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bl7  section-bl5 section-bl555 form-out form-out2 hidden" id="form6">
+    <div class="container">
+
+
+      <section class="section form-well">
+        <div class="sp-bl1-f hidden">
+          <div class="sp-bl1-f1">
+            <img src="img_v2/akar-icons_thumbs-up.svg" alt="">
+          </div>
+          <div class="sp-bl1-f2">
+            Спасибо!
+          </div>
+          <div class="sp-bl1-f3">
+            Данные отправлены. Мы свяжемся с вами в ближайшее время!
+          </div>
+        </div>
+
+        <div class="ex exto2">
+          <img src="img_v2/ex.svg" alt="/" class="ex">
+        </div>
+
+        <div class="section-bl7-cart">
+
+
+          <div class="ex exto2">
+            <img src="img_v2/ex.svg" alt="/" class="ex">
+          </div>
+
+          <div class="section-bl7-l">
+            <div class="section-bl7-l-sc section-bl7-l-sc-1">
+              <div class="section-bl7-sc-t">
+                Количество сотрудников РФ
+              </div>
+              <div class="section-bl7-sc-b">
+                <div class="section-bl7-sc-l section-bl7-sc-l1">30</div>
+                <div class="section-bl7-sc-r">
+                  <input type="range" min="20" max="100" step="1" value="30" class="steppi steppi-un">
+                </div>
+              </div>
+            </div>
+
+            <div class="section-bl7-l-sc section-bl7-l-sc-2">
+              <div class="section-bl7-sc-t">
+                Количество сотрудников СНГ
+              </div>
+              <div class="section-bl7-sc-b">
+                <div class="section-bl7-sc-l section-bl7-sc-l2">75</div>
+                <div class="section-bl7-sc-r">
+                  <input type="range" min="20" max="100" step="1" value="75" class="steppi steppi-un">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section-bl7-l-b">
+              <div class="section-bl7-l-b-tit">
+                Требуется ли расчет заработной платы?
+              </div>
+              <div class="section-bl7-lbtn-cont">
+                <div class="section-bl7-lbtn v1 acti data-v1">
+                  да
+                </div>
+                <div class="section-bl7-lbtn v2 act acti data-v2">
+                  нет
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-bl7-r">
+            <form class="section-bl7-r-cart" id="form10" novalidate="novalidate">
+              <div class="gitl">
+                <div class="section-bl7-r-cart-tit">
+                  Итого
+                </div>
+                <div class="section-bl7-r-cart-num">
+                  <div class="telnum">255000</div>
+                  <span>
+                    /мес
+                  </span>
+                </div>
+                <div class="section-bl7-r-cart-sub section-bl7-r-cart-sub1">
+                  окончательная стоимость может отличатся
+                </div>
+                <div class="section-bl7-r-cart-sub section-bl7-r-cart-sub2 m1">
+                  оставьте свои контактные данные и мы подготовим для вакс персональное коммерческое предложение
+                </div>
+
+                <div class="type-btn">
+                  <img src="img_v2/icim1.svg" alt="" class="icon-vm1">
+                  <input type="text" class="maininput toname" name="name" placeholder="Имя">
+                </div>
+
+                <div class="co-rowin-t2">
+                  <div class="co-rowin-t2-row-bot">
+                    <div class="co-rowin-t2-col ho">
+                      <img src="img_v2/icim3.svg" alt="" class="icon-vm1">
+                      <div class="co-rowin-t2-col-text">
+                        E-mail
+                      </div>
+                    </div>
+
+                    <div class="co-rowin-t2-col">
+                      <img src="img_v2/icim4.svg" alt="" class="icon-vm1">
+                      <div class="co-rowin-t2-col-text">
+                        WhatsApp
+                      </div>
+                    </div>
+
+                    <div class="co-rowin-t2-col">
+                      <img src="img_v2/icim5.svg" alt="" class="icon-vm1">
+                      <div class="co-rowin-t2-col-text">
+                        Telegram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="co-rowin">
+                  <div class="co-row-in co-row-in1 drip">
+                    <div class="type-btn">
+                      <img src="img_v2/icim6.svg" alt="" class="icon-vm1">
+                      <input type="mail" class="co-input1" name="mail" placeholder="examle@mail.ru">
+
+                    </div>
+                  </div>
+
+                  <div class="co-row-in co-row-in2 hidden">
+                    <div class="type-btn">
+                      <img src="img_v2/icim6.svg" alt="" class="icon-vm1">
+                      <input type="tel" class="co-input2 totel" name="tel" placeholder="Телефон">
+
+                    </div>
+                  </div>
+
+                  <div class="co-row-in co-row-in3 hidden">
+
+                    <div class="type-btn">
+                      <img src="img_v2/icim6.svg" alt="" class="icon-vm1">
+                      <input type="tel" class="co-input3" name="tel2" placeholder="Телефон">
+                      <input type="text" class="lol" name="tel totel"
+                        style="max-height: 0px; max-width: 0px; opacity: 0px;">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="gitl-g">
+                <div class="section-btn section-btn-v1">Получить КП и чек-лист</div>
+
+                <div class="polz-bl">
+                  <input type="text" class="polzinput">
+                  <img src="img_v2/icim7.svg" alt="" class="polz1">
+                  <img src="img_v2/icim77.svg" alt="" class="polz2 hidden">
+                  <div class="polz">С <a class="exit-btn">политикой конфиденциальности </a> ознакомлен(а)</div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </section>
+
+  <footer id="cont">
+
+    <section class="section footer base-f" date-nameform="base-f">
+      <div class="container">
+
+        <div class="fu-l">
+          <div class="fu-t">
+            <div class="fu-t-title">
+              До встречи в офисе!
+            </div>
+            <div class="fu-t-sub">
+              Санкт-Петербург, Петровская коса, д. 1, <br>
+              корп. 1, лит. Р (БЦ «Петровский»)
+            </div>
+          </div>
+          <div class="fu-c">
+            <div class="fu-c-l">
+
+              <div class="fu-gruppy">
+                <div class="fu-c-l-ti">
+                  Адрес
+
+                </div>
+                <a href="tel:+78002224110" class="f-linky">+ 7 800 222 41 10</a>
+                <a href="mailto:hr@s-vitagroup.ru" class="f-linky">hr@s-vitagroup.ru</a>
+              </div>
+
+              <div class="fu-gruppy">
+                <div class="fu-c-l-ti">
+                  Соцсети
+                </div><!-- +7 921 798-50-22 -->
+                <a href="https://t.me/SVITAHR_bot" class="f-linky">Telegram</a>
+                <a href="https://wa.me/+79217985022" class="f-linky">Whatsapp</a>
+
+                <div class="uni-social">
+                  <a href="https://vk.com/s_vitagroup" target="_blank" class="uni-social-link">
+                    <img src="/im/vk-logo.svg" alt="" class="uni-social-im">
+                  </a>
+                  <a href="https://dzen.ru/s_vitaconsulting" target="_blank" class="uni-social-link">
+                    <img src="/im/Yandex_Zen_logo_icon.svg" alt="" class="uni-social-im">
+                  </a>
+                  <a href="https://vc.ru/u/1727614-s-vita-consulting-group" target="_blank" class="uni-social-link">
+                    <img src="/im/vc_ru.png" alt="" class="uni-social-im">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="fu-c-r">
+              <input type="text" class="maininput toname cl-name-er-btn-i " name="name" placeholder="ИМЯ"
+                date-nameform="base-f">
+              <input type="tel" class="maininput totel cl-tel-er-btn-i" name="tel" placeholder="ТЕЛЕФОН"
+                date-nameform="base-f">
+
+              <div class="form-b-b-b-b" date-nameform="base-f">
+                <div class="polzi hidden">требуется согласие с политикой конфиденциальности</div>
+                <div class="polz-bl">
+                  <input type="text" class="polzinput" date-nameform="base-f">
+                  <img src="img_v2/yep.svg" alt="" class="polz1">
+                  <img src="img_v2/nope.svg" alt="" class="polz2 hidden">
+                  <div class="polz"> <a class="exit-btn">Я согласен на обработку </a> <span>персональных данных</span>
+                  </div>
+                </div>
+                <div class="section-btn section-btn-v1 submit form-main-b1 tosendi" date-nameform="base-f">Отправить
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="fu-b">
+            <div class="fu-b-l">
+              Все права защищены
+            </div>
+            <div class="fu-b-r conf">
+              Политика конфиденциальности
+            </div>
+          </div>
+        </div>
+        <div class="fu-r">
+          <div style="position:relative;overflow:hidden;"><a
+              href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+              href="https://yandex.ru/maps/2/saint-petersburg/house/petrovskaya_kosa_1k1/Z0kYdAJhSEYBQFtjfXV3c3RjbQ==/?ll=30.254195%2C59.961478&utm_medium=mapframe&utm_source=maps&z=15.49"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Петровская коса, 1к1 —
+              Яндекс Карты</a><iframe
+              src="https://yandex.ru/map-widget/v1/?ll=30.254195%2C59.961478&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQ1OTI3ORJQ0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0J%2FQtdGC0YDQvtCy0YHQutCw0Y8g0LrQvtGB0LAsIDHQujEiCg1SAvJBFevZb0I%3D&z=15.49"
+              width="620" height="827" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="inimity">
+      <div style="position:relative;overflow:hidden;"><a
+          href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+          href="https://yandex.ru/maps/2/saint-petersburg/house/petrovskaya_kosa_1k1/Z0kYdAJhSEYBQFtjfXV3c3RjbQ==/?ll=30.254195%2C59.961478&utm_medium=mapframe&utm_source=maps&z=15.49"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Петровская коса, 1к1 — Яндекс Карты</a><iframe
+          src="https://yandex.ru/map-widget/v1/?ll=30.254195%2C59.961478&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQ1OTI3ORJQ0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0J%2FQtdGC0YDQvtCy0YHQutCw0Y8g0LrQvtGB0LAsIDHQujEiCg1SAvJBFevZb0I%3D&z=15.49"
+          width="620" height="827" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+
+    <div class="fu-b nm">
+      <div class="fu-b-l">
+        Все права защищены
+      </div>
+      <div class="fu-b-r conf">
+        Политика конфиденциальности
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
 </html>

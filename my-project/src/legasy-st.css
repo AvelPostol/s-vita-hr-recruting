@@ -2195,7 +2195,7 @@ input {
 .section-bl4 .swiper {
   padding: 20px 0px 0px 0px;
 }
-
+/*
 .section-bl5 {
   background-image: url(assets/images/section-bl5-fonr.png);
   background-position: center;
@@ -2206,8 +2206,8 @@ input {
   position: relative;
   padding: 14px 0px;
   z-index: 1;
-}
-
+}*/
+/*
 .section-bl5::after {
   content: '';
   background-image: url(assets/images/dasd.svg);
@@ -2219,7 +2219,7 @@ input {
   right: 0px;
   background-repeat: no-repeat;
   background-position: right;
-}
+}*/
 
 .section-bl5 .container {
   display: flex;
@@ -3639,7 +3639,7 @@ input {
 .steppi {
   width: 100%;
 }
-
+/*
 .section.section-bl5.form-out1 {
   width: 100vw;
   overflow: hidden;
@@ -3654,7 +3654,7 @@ input {
   left: 0px;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-}
+}*/
 
 .section.section-bl5.form-out1 .type-btn {
   margin: 0px;
@@ -9678,8 +9678,14 @@ footer .section-btn.section-btn-v1:hover{
 
 
 
-
-
+.card-sh{
+  overflow: visible!important;
+  background: transparent!important;
+  box-shadow: none!important;
+}
+.v-overlay__content{
+  width: fit-content!important;
+}
 
 
 

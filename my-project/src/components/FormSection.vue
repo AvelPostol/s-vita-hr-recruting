@@ -1,126 +1,69 @@
 <template>
-    <v-section class="section section-bl5 form-out form-out1">
-      <v-container>
-        <v-section class="section form-well base-up" data-nameform="base-up">
-          <v-form @submit.prevent="submitForm" action="/call.php" class="form-call" method="post" novalidate="novalidate" id="form7">
+  <v-app>
+    <v-dialog v-model="dialogVisible">
+      <v-card class="card-sh">
+        <section class="section form-well base-up section-bl5 form-out form-out1" date-nameform="base-up">
+          <form action="/call.php" class="form-call" method="post" novalidate="novalidate" id="form7">
             <div class="sp-bl1">
-              <div class="ex exto1">
-                <img src="https://test.24kibo.ru/img_v2/ex.svg" alt="/" class="ex">
-              </div>
-              <div class="form-t">
-                <div class="titlesp">
-                  Получить бесплатную консультацию
-                </div>
-              </div>
+              <div class="ex exto1" @click="closeDialog"> <img src="img_v2/ex.svg" alt="/" class="ex"> </div>
+              <div class="form-t"> <div class="titlesp"> Получить бесплатную консультацию </div></div>
               <div class="form-b-b-b">
                 <div class="form-b-b-b-t">
-                    <div class="btn-title">
-                        Введите ФИО/ название компании*
-                    </div>
-                    <div class="type-btn-vue">
-                        <img src="https://test.24kibo.ru/img_v2/icim1.svg" alt="" class="icon-vm1">
-                        <v-text-field
-                            v-model="fullName"
-                            required
-                            :rules="[requiredRule]"
-                            data-nameform="base-up"
-                        ></v-text-field>
-                    </div>
-                    <div class="btn-title">
-                        Введите телефон*
-                    </div>
-                    <div class="type-btn-vue">
-                        <img src="https://test.24kibo.ru/img_v2/icim10.svg" alt="" class="icon-vm1">
-                        <v-text-field
-                            v-model="phoneNumber"
-                            required
-                            :rules="[requiredRule]"
-                            data-nameform="base-up"
-                        ></v-text-field>
-                    </div>
-                    <div class="btn-title">
-                        Введите Кого ищем/специальность
-                    </div>
-                    <div class="type-btn-vue">
-                        <img src="https://test.24kibo.ru/img_v2/icim1.svg" alt="" class="icon-vm1">
-                        <v-text-field
-                            v-model="specialization"
-                            data-nameform="base-up"
-                        ></v-text-field>
-                    </div>
+                  <div class="btn-title"> ФИО/Компания* </div>
+                  <div class="type-btn cl-name-er-btn-i">
+                    <img src="img_v2/icim1.svg" alt="" class="icon-vm1">
+                    <input type="text" class="maininput toname" name="name" placeholder="Имя" date-nameform="base-up">
+                  </div>
+                  <div class="btn-title">   Телефон*  </div>
+                  <div class="type-btn cl-tel-er-btn-i">
+                    <img src="img_v2/icim10.svg" alt="" class="icon-vm1">
+                    <input type="tel" class="maininput totel" name="tel" placeholder="8 (904) 200-54-95" date-nameform="base-up">
+                    <input type="text" class="lov2" name="tel" style="max-height: 0px; max-width: 0px; opacity: 0px;">
+                  </div>
+                  <div class="btn-title">  Кого ищем/специальность </div>
+                  <div class="type-btn">
+                    <img src="img_v2/icim1.svg" alt="" class="icon-vm1">
+                    <input type="text" class="maininput tosubname" name="subname" placeholder="Бухгалтер" date-nameform="base-up">
+                  </div>
                 </div>
-                <div class="form-b-b-b-b" data-nameform="base-up">
-                  <v-btn class="section-btn section-btn-v1 submit form-main-b1 tosendi" @click.prevent="submitForm" data-nameform="base-up">
-                    Начать работу
-                  </v-btn>
-                  <v-checkbox v-model="consent" :rules="[requiredConsentRule]" class="my-checkbox">
-                        <template #label>
-                        <div class="checkbox-content">
-                            <span>С </span>
-                            <a class="exit-btn" >политикой конфиденциальности ознакомлен(а)</a>
-                        </div>
-                        </template>
-                    </v-checkbox>
+                <div class="form-b-b-b-b" date-nameform="base-up">
+                  <div class="section-btn section-btn-v1 submit form-main-b1 tosendi" date-nameform="base-up">Начать работу</div>
+                  <div class="polzi hidden">требуется согласие с политикой конфиденциальности</div>
+                  <div class="polz-bl">
+                    <div type="text" class="polzinput" date-nameform="base-up"></div>
+                    <img src="img_v2/icim7.svg" alt="" class="polz1">
+                    <img src="img_v2/icim77.svg" alt="" class="polz2 hidden">
+                    <div class="polz">С <span class="exit-btn">политикой конфиденциальности</span> ознакомлен(а)</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </v-form>
-        </v-section>
-      </v-container>
-    </v-section>
-  </template>
-  
-  <script>
-  import axios from 'axios';
-  
-  export default {
-    data() {
+          </form>  
+        </section>
+      </v-card>
+    </v-dialog>
+
+    <button @click="openDialog" class="ex-popup">Открыть попап по классу</button>
+
+  </v-app>
+</template>
+
+ 
+
+<script>
+export default {
+  data() {
     return {
-      fullName: '',
-      phoneNumber: '',
-      specialization: '',
-      consent: false,
-      requiredRule: v => !!v || 'Это поле обязательно к заполнению',
-      requiredConsentRule: [v => !!v || 'Необходимо дать согласие на обработку данных'],
+      dialogVisible: false,
     };
+  },
+  methods: {
+    openDialog() {
+      this.dialogVisible = true;
     },
-    methods: {
-      async submitForm() {
-      
-      if (!this.$refs.form.validate() || !this.consent) {
-        console.log('Submit aborted');
-        return;
-      }
-
-      if (!this.fullName || !this.phoneNumber) {
-        console.log('Required fields are missing');
-        return;
-      }
-      const formData = new FormData();
-      formData.append('reviewType', this.fullName);
-      formData.append('nameOrCompany', this.phoneNumber);
-      formData.append('comment', this.specializatio);
-
-      try {
-        // Отправляем данные на сервер
-        const response = await axios.post('/api/call-push.php', formData, {
-          headers: {
-            'Content-Type': 'multipart/form-data'
-          }
-        });
-
-        // Обработка успешного ответа
-        const newReview = response.data;
-        this.reviews.push(newReview);
-        this.dialogVisible = true;
-        this.resetFormFields();
-
-      } catch (error) {
-        // Обработка ошибок
-        console.error('Error submitting review:', error);
-      }
+    closeDialog() {
+      this.dialogVisible = false;
     },
-    }
-  };
-  </script>
-  
+  },
+};
+</script>
