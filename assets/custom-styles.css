@@ -1,0 +1,363 @@
+.my-form {
+    /* Ваши стили для формы */
+  }
+  .v-input__details{
+    margin: 0px 0px 10px 0px;
+  }
+  .input-dnld{
+    max-width: 240px;
+  }
+  .section-comment-line{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffdfb;
+    padding: 0px 0px 100px 0px;
+  }
+  .section-comment-line .container{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #EDF3FF;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .otz-title{
+    font-weight: 900;
+    color: #313654;
+    font-size: var(--f4);
+  }
+  .v-selection-control .v-label{
+    font-weight: 500;
+    opacity: 1;
+    font-size: 20px;
+  }
+  .v-btn.button-send-otz{
+    width: 280px;
+    height: 54px;
+    background: linear-gradient(88.32deg, #0b7455 0%, #06936a 100%);
+    border-radius: 15px;
+    margin: 0px;
+    box-shadow: none;
+  }
+  .v-input--error .v-messages__message{
+    font-size: 14px;
+    color: rgb(176,0,32);
+  }
+  .v-input__control * {
+    font-size: 14px;
+  }
+  .fank .v-card-actions .v-btn{
+    background: #3d7eff;
+    display: flex;
+  }
+  .fank .v-card{
+    overflow: hidden;
+  }
+  .image-comment{
+    max-height: 400px;
+  }
+  .v-dialog>.v-overlay__content>.v-card{
+    overflow: hidden;
+  }
+  .fank *{
+    text-align: center;
+  }
+  .fank .v-card-actions{
+    display: flex;
+    justify-content: center;
+  }
+  .my-input {
+    /* Ваши стили для полей ввода */
+  }
+  .v-card--variant-elevated {
+    box-shadow: none;
+}
+  .v-btn.v-btn--density-default .v-btn__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--f3);
+    font-weight: 700;
+    border-radius: 15px;
+    white-space: nowrap;
+    text-transform: none;
+    color: #fff;
+  }
+  .my-comments h2{
+    font-size: var(--f4);
+    color: #313654;
+    font-weight: 900;
+  }
+  .my-checkbox {
+    /* Ваши стили для чекбокса */
+  }
+  
+  .my-button {
+    /* Ваши стили для кнопки */
+  }
+  
+  .my-dialog {
+    /* Ваши стили для всплывающего окна */
+  }
+  .my-comments h2{
+    margin: 0px 0px 15px 0px;
+  }
+  .my-comments{
+    margin: 40px 0px 0px 0px;
+  }
+  .button-send-otz{
+    background: linear-gradient(88.32deg, #344597 0%, #496DA9 100%);
+  }
+  .exit-btn {
+    /* Добавьте стили по вашему усмотрению, например, измените цвет и стиль текста, чтобы сделать ссылку выделяющейся */
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0px 0px 0px 4px;
+  }
+  .v-selection-control__wrapper{
+    display: contents;
+  }
+  .button-send-otz:hover {
+    background: #b71313;
+    background-color: #edf3ff!important;
+    box-shadow: none;
+    border: 1px solid #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-send-otz:hover .v-btn__content{
+    color: #272727!important;
+  }
+  .v-card--variant-elevated{
+    margin: 10px 0px;
+  }
+  .image-comment{
+    object-fit: contain;
+    width: 100%;
+  }
+  @media(max-width:767px){
+    .section-comment-line{
+      margin: 60px 0px;
+    }
+  }
+
+  .section.section-bl5.form-out1 .btn-title{
+  /*  margin: 0px 0px -10px 0px;
+    padding: 15px 0px 0px 10px;*/
+   /* padding: 0px;*/
+  }
+  .form-b-b-b-t{
+
+  }
+  .form-call .v-input__details{
+    display: none!important;
+  }
+
+  .form-call  .v-input__control *{
+    font-size: 10px;
+  }
+
+  .checkbox-content {
+    display: flex;
+    align-items: baseline;
+  }
+  .form-call .v-selection-control__input i{
+    font-size: 16px;
+  }
+  .type-btn-vue{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #8195c2;
+    position: relative;
+  }
+  .type-btn-vue img{
+    margin: 0px 10px 0px 0px;
+    position: absolute;
+
+    z-index: 1;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .type-btn-vue .v-field__field{
+    max-height: 40px;
+  }
+  .type-btn-vue .v-field__input{
+    padding: 0px 0px 0px 50px;
+    min-height: 40px;
+    background-color: #f6f6f6;
+  }
+  .v-dialog{
+    z-index: 100000000!important;
+  }
+
+  .section-bl5 .type-btn{
+    padding: 0px 20px;
+  }
+  .section-bl5 .maininput{
+    min-height: 40px;
+  }
+  
+  #lentserv .v-application{
+    overflow: visible!important;
+    background: transparent;
+  }
+    
+  #lentserv .v-main{
+    overflow: visible;
+    background: transparent;
+  }
+  .section-btn.section-btn-v12 {
+    width: 100%;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Bellota';
+  src: url('../fonts/Bellota-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Mon';
+  src: url('../fonts/MuseoSansCyrl-300.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Mon';
+  src: url('../fonts/MuseoSansCyrl-500.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Mon';
+  src: url('../fonts/MuseoSansCyrl-700.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Mon';
+  src: url('../fonts/MuseoSansCyrl-900.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'app';
+  src: url('../fonts/applemyungjo-regular.ttf');
+  font-weight: 400;
+}
+
+
+.v-application--is-ltr .v-window__prev{
+  display: none!important;
+}
+.v-application--is-ltr .v-window__next{
+  display: none!important;
+}
+
+
+.uni-social{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+      width: fit-content;
+      margin: 7px 0px;
+      border-radius: 7px;
+  }
+  .uni-social-im{
+  width: 32px;
+  }
+  .uni-social-link{
+  padding: 5px 7px;
+  }
+  .section.section-bl5.form-out .form-call{
+    height: fit-content;
+  }
+  .v-card .v-card-text{
+    background: #739eee36;
+    margin: 10px;
+  }
+  .v-img__img--contain{
+    max-height: 80vh;
+  }
+  .v-responsive__content{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .v-btn--icon.v-btn--density-default{
+    background-color: #fff!important;
+  }
+
+  .section-comment-line .container {
+    width: 100%;
+    max-width: 1200px!important;
+    background-color: #edf3ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.s-cl-row {
+  width: 20%;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.s-cl-bl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.s-cl-im-d{
+  width: 100%;
+  height: 100%;
+}
+.section .s-cl-title{
+  font-size: var(--f4);
+  color: #313654;
+  font-weight: 900;
+  margin: 0px 0px 40px 0px;
+}
+.section.s-cl{
+padding: 0px 0px 80px 0px;
+}
+
+@media(max-width:1200px){
+  .s-cl-row {
+    width: 33.3%;
+  }
+}
+
+@media(max-width:767px){
+  .s-cl-row {
+    width: 50%;
+    height: 100px;
+  }
+  .section.s-cl{
+    padding: 0px;
+  }
+}
+
+.section-bl11 .swiper-slid-text {
+  white-space: normal;
+  max-width: 218px;
+}
+.swiper-slide{
+  padding:0px 20px;
+}
