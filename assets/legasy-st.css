@@ -3139,7 +3139,7 @@ footer iframe {
 
 footer .section .container {
   display: flex;
-  max-width: calc(1200px + (100% - 1200px) / 2);
+  min-width: calc(1200px + (100vw - 1200px) / 2);
 }
 
 footer .fu-l {
@@ -5151,7 +5151,7 @@ br.lg {
 .n2 .n3-c-t {
   padding: 10px 0px 0px 0px;
   font-weight: 300;
-  font-size: 64px;
+  font-size: 48px;
   line-height: 110%;
   color: #739eee;
 }
@@ -5749,7 +5749,7 @@ footer iframe {
 
 footer .section .container {
   display: flex;
-  max-width: calc(1200px + (100% - 1200px) / 2);
+  min-width: calc(1200px + (100vw - 1200px) / 2);
 }
 
 footer .fu-l {
@@ -6593,11 +6593,11 @@ footer .fu-r iframe {
 
   footer .section .container {
     display: flex;
-    max-width: calc(100vw - 40px);
+    min-width: calc(100vw - 40px);
   }
 
   .section .containei {
-    max-width: calc(100vw - 40px);
+    min-width: calc(100vw - 40px);
   }
 }
 
@@ -8983,7 +8983,7 @@ footer .fu-r iframe {
 
   footer .section .container {
     width: 100%;
-    max-width: calc(100% - 20px);
+    max-width: calc(100vw - 20px);
   }
 
   footer .section {
@@ -9731,4 +9731,3 @@ footer .section-btn.section-btn-v1:hover{
     src: url('../fonts/applemyungjo-regular.ttf');
     font-weight: 400;
   }
-

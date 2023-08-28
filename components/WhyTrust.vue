@@ -1,46 +1,20 @@
 
 
 <template>
- 
  <section class="section s4">
     <div class="container">
-        <div class="s4-t">
-            Почему наши клиенты доверяют нам
-        </div>
-        <div class="s4-b">
-            <div class="s4-row">
-                <div class="s4-col">
+        <div class="s4-by" >
+            <div class="s4-rowy" v-for="(item, index) in items" :key="index">
+                <div class="s4-coly">
                     <div class="s4-l">
-                        7
+                           {{ item.title }} <span v-if="item.subspan">{{ item.subspan }}</span>
                     </div> 
                     <div class="s4-r">
-                        Директоров различных направлений <br> нашей компании проводят <br> собеседования с кандидатами на <br> руководящие позиции
+                        {{ item.content }} 
                     </div>
                 </div>
             </div>
 
-            <div class="s4-row">
-                <div class="s4-col">
-                    <div class="s4-l">
-                        20
-                    </div>
-                    <div class="s4-r">
-                        Дней - средний срок <br> закрытия вакансии 
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="s4-row">
-                <div class="s4-col">
-                    <div class="s4-l">
-                        0
-                    </div>
-                    <div class="s4-r">
-                        Рублей вы платите до момента <br> выхода сотрудника на работу
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -51,11 +25,30 @@
   <script>
   export default {
     name: 'LentBtn',
-    data() {
+  data() {
       return {
-  
+        items: [
+          {
+            title: '100+',
+            content: 'Довольных клентов',
+          },
+            {
+            title: '95%',
+            content: ' Клиентов работают с нами на постоянной основе',
+          },
+            {
+            title: '100',
+            content: 'Успешных кейсов по рекрутингу',
+          },
+            {
+            title: '10',
+            content: 'Средний стаж работы  консультантов в компании',
+            subspan: 'лет',
+          },
+        ],
+
       };
-    }
+    },
   };
   </script>
   

@@ -1,122 +1,153 @@
 <template>
     <section class="section n4">
       <div class="container">
-        <div class="n4-l">
-          <div class="n4-l-t">
-            Преимущества
-          </div>
-          <img src="../images/img_v2/n4-im1.svg" alt="" class="n4-l-c">
-          <img src="../images/img_v2/n4-im2.svg" alt="" class="n4-l-b">
+        <div class="n4-t"><div class="n4-l-t">Наши преимущества</div>
         </div>
-        <div class="n4-r">
-          <div class="n4-r-t">
-            <li>Оплата только после трудоустройства</li>
-            <li>Гарантийный период до 1-го года</li>
-            <li>1 бесплатная замена в случае увольнения сотрудника</li>
-          </div>
-          <div class="n4-r-b">
-            <div
-              class="n4-r-b-row one"
-              v-for="(item, index) in advantageBlocks"
+        <div class="n4-b">
+          <div class="n4-b-bl-top n4-b-bl">
+            <div class="n4-row"
+              v-for="(item, index) in filteredRetbl1"
               :key="index"
-              @click="toggleBlock(index)"
-              :class="{ acti: activeBlock === index }"
             >
-              <div class="n4-r-b-l">{{ item.title }}</div>
-              <div class="n4-r-b-r">
-                <div class="n4-r-b-i1" v-show="activeBlock === index">{{ item.content }}</div>
-                <img
-                  src="../images/img_v2/n4-r-b-i2.svg"
-                  alt=""
-                  class="n4-r-b-i2"
-                  :class="{ rotate: activeBlock === index }"
+               <div class="n4-col">
+                   <img :src="item.image" alt="" class="n4-ic">
+                   <div class="n4-title">{{ item.title }}</div>
+                   <div class="n4-text">{{ item.content }}</div>
+                </div>
+            </div>
+          </div>
+          <div class="n4-b-bl-center n4-b-bl">
+            <div class="n4-b-bl-center-l">
+              <div class="n4-image-bl"><img src="../images/im/preimscreen.png" alt="" class="n4-image"></div>
+              <div class="n4-b-bl-center-r">
+                <div class="n4-row"
+                  v-for="(item, index) in filteredRetbl2"
+                  :key="index"
                 >
+                <div class="n4-col">
+                      <img :src="item.image" alt="" class="n4-ic">
+                      <div class="n4-title">{{ item.title }}</div>
+                      <div class="n4-text">{{ item.content }}</div>
+                    </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="boom exto1"><div class="section-btn section-btn-v1 ex">Бесплатная консультация</div></div>
+        </div>
+      </div>
+
+<div class="container">
+   <div class="bl-loyalty">
+    <div class="loyalty-main-title">
+      Программа лояльности
+    </div>
+      <div class="loyalty-block">
+        <div class="loyalty-row"
+          v-for="(item, index) in loyalty"
+          :key="index"
+        >
+          <div class="loyalty-col">
+            <div class="loyalty-t">
+            <div class="loyalty-title">{{ item.title }}</div>
+            <div class="loyalty-text">{{ item.text }}</div>
+            </div>
+            <div class="loyalty-b">
+              <div class="loyalty-nume">{{ item.nume}}</div>
+              <div class="loyalty-sebtext">{{ item.subtext }}</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+</div>
+ 
+
     </section>
   </template>
-
 
 <script>
 export default {
   name: 'EdgeBl',
+  computed: {
+    filteredRetbl1() {
+      return this.retbl1.filter((item, index) => index < 3);
+    },
+     filteredRetbl2() {
+      return this.retbl1.filter((item, index) => index >= 3);
+    },
+  },
   data() {
     return {
-      advantageBlocks: [
+      loyalty: [
         {
-          title: 'Компетентность',
-          content:
-            'Мы включаем участие наших экспертов высокого уровня в процесс отбора кандидатов. Это может быть финансовый директор, руководитель юридического направления, директор по персоналу или IT-директор, которые смогут оценить компетенции кандидатов и помочь вам найти того, кто идеально подходит для вашей компании.',
+          title: 'Постоплата',
+          text: 'Оплата по факту трудоустройства и выхода сотрудника на работу в течение 3-х рабочих дней. ',
+          nume: '0 ₽',
+          subtext: 'Постоплата',
+        },
+          {
+          title: 'Выгодные скидки ',
+          text: 'Постоянным партнерам и клиентам с заявкой от 3-х вакансий скидка 10-15% на услуги подбора и другие консалтинговые услуги S-vita consulting group.',
+          nume: '10-15%',
+          subtext: 'Скидка постоянным клиентам',
+        },
+          {
+          title: 'Гарантийный период',
+          text: 'Предоставляется замена сотрудника, не прошедшего испытательный срок, в течение всего срока гарантии (однократно бесплатно).',
+          nume: '0 ₽',
+          subtext: 'Гарантийный период',
+        },
+          {
+          title: 'Бонусы',
+          text: 'Разбор конфликтной ситуации в коллективе / разработка системы подарков для коллектива / другие предложения по удержанию и налаживанию атмосферы внутри коллектива.',
+          nume: '∞',
+          subtext: 'Подарки',
+        },
+      ],
+      retbl1: [
+        {
+          image: require('../images/im/preim1.svg'),
+          title: 'Только самые сильные потенциальные претенденты на должность',
+          content: 'Предлагаем к рассмотрению лучших кандидатов, точно соответствующих запросам и профилю.',
         },
         {
-          title: 'Скорость',
-          content:
-            'Мы понимаем, что нахождение подходящего кандидата может занять много времени, в то время как бизнес будет терять деньги. Благодаря накопленной базе и опыту, мы можем закрывать даже сложные позиции в течение нескольких недель.',
+          image: require('../images/im/preim2.svg'),
+          title: 'Собеседование с руководителями SCG',
+          content: 'Помимо HR-менеджеров собеседования с кандидатами проводят профильные руководители направлений (финансовый директор, главный бухгалтер, руководитель юридического направления, руководитель IT-направления).',
         },
         {
+          image: require('../images/im/preim3.svg'),
+          title: 'Замена сотрудника по гарантии',
+          content: 'Предоставим замену сотрудника, не прошедшего испытательный срок, в течение всего срока гарантии (однократно бесплатно).',
+        },
+        {
+          image: require('../images/im/preim4.svg'),
+          title: 'Эксклюзивные источники поиска кандитатов',
+          content: 'Помимо рабочих сайтов используем собственную базу, рекламные каналы, соцсети, профильные мероприятия.',
+        },
+        {
+          image: require('../images/im/preim5.svg'),
+          title: 'Скорость подбора, поддержка 24/7',
+          content: 'Обеспечиваем оперативное закрытие вакансии благодаря экспертизе и динамичности команды.',
+        },
+         {
+          image: require('../images/im/preim6.svg'),
           title: 'Оплата за результат',
-          content:
-            'Оплачивайте услугу после трудоустройства, без предоплаты и изменений стоимости.',
+          content: 'Оплачиваете услугу после трудоустройства без предоплаты и изменения стоимости.',
         },
         {
-          title: 'Актуальность',
-          content:
-            'Отслеживаем все изменения законодательства в сфере трудового права и оперативно реагируем на изменения. Мы также постоянно анализируем вакансии, чтобы обеспечить вам всестороннюю информацию по рынку труда и дать возможность принимать оптимальные HR-решения.',
-        },
-        // Добавьте еще блоки по аналогии
+          image: require('../images/im/preim7.svg'),
+          title: 'Команда профессионалов с многолетним опытом в сфере управления человеческими ресурсами',
+        }, 
       ],
       activeBlock: null,
     };
   },
   methods: {
-    toggleBlock(index) {
-      if (this.activeBlock === index) {
-        this.activeBlock = null;
-      } else {
-        this.activeBlock = index;
-      }
-    
 
-      const blocks = document.querySelectorAll('.n4-r-b-row');
-      blocks.forEach((block, i) => {
-        if (i === index) {
-          block.classList.add('acti');
-          block.querySelector('.n4-r-b-i2').classList.add('rotate');
-          block.querySelector('.n4-r-b-i1').style.display = 'block';
-        } else {
-          block.classList.remove('acti');
-          block.querySelector('.n4-r-b-i2').classList.remove('rotate');
-          block.querySelector('.n4-r-b-i1').style.display = 'none';
-        }
-      });
-    },
   },
 };
 </script>
 
 
-<style scoped>
-.acti {
-  /* Стили для активного блока */
-}
-
-.rotate {
-  /* Стили для поворота иконки */
-  transform: rotate(180deg);
-  transition: transform 0.3s ease; /* Добавлено свойство transition */
-}
-
-.n4-r-b-i1 {
-  display: none;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease; /* Добавлено свойство transition */
-}
-
-.n4-r-b-row.acti .n4-r-b-i1 {
-  max-height: 200px; /* Высота, на которую будет разворачиваться блок */
-}
-</style>

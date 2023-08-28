@@ -9,11 +9,11 @@
        <WhyTrust/>
        <EdgeBl/>
        <LentForm/>
-       <WeBl/>
        <HowWork/>
-       <OtzMain/>
-       <NashiPartneru/>
        <NashaComanda/>
+       <VacansyTo/>
+       <NashiPartneru/>
+       <EndFooter/>
     </v-main>
     <FormSection />
   </v-app>
@@ -31,14 +31,15 @@ import CaseSlider from '~/components/CaseSlider.vue';
 import WhyTrust from '~/components/WhyTrust.vue';
 import EdgeBl from '~/components/EdgeBl.vue';
 import LentForm from '~/components/LentForm.vue';
-import WeBl from '~/components/WeBl.vue';
 
 import HowWork from '~/components/HowWork.vue';
 import OtzMain from '~/components/OtzMain.vue';
 import NashiPartneru from '~/components/NashiPartneru.vue';
 
-import NashaComanda from '~/components/NashaComanda.vue';
+import EndFooter from '~/components/EndFooter.vue';
 
+import NashaComanda from '~/components/NashaComanda.vue';
+import VacansyTo '~/components/VacansyTo.vue';
 
 
 export default {
@@ -53,11 +54,11 @@ export default {
     WhyTrust,
     EdgeBl,
     LentForm,
-    WeBl,
     HowWork,
-    OtzMain,
+    NashaComanda,
     NashiPartneru,
-    NashaComanda
+    EndFooter,
+    VacansyTo
   },
 
 };

@@ -1,5 +1,5 @@
 <template>
-  <v-section class="section section-bl11" id="id4">
+  <section class="section section-bl11" id="id4">
     <v-container>
       <v-row class="section-bl11-container">
         <v-col cols="12">
@@ -11,18 +11,23 @@
           </div>
         </v-col>
         <v-col cols="12">
-
  <v-slide-group
     :cycle="false"
     :show-arrows="true"
   >
-    <v-slide-group-item
+    <template v-slot:prev>
+      <img src="../images/img_v2/n2-prev.svg" alt="" class="n2-prev">
+    </template>
+    <template v-slot:next>
+      <img src="../images/img_v2/n2-next.svg" alt="" class="n2-next">
+    </template>
+
+    <v-slide-item
       v-for="(item, index) in teamMembers"
       :key="index"
       :active-class="'v-slide-item--active'"
     >
-    <div class="swiper-slide">
-                <div class="swiper-slid-row">
+   <div class="swiper-slid-row">
                   <div class="swiper-slid-col">
                     <v-img :src="item.image" alt="" class="swiper-slid-im"></v-img>
                     <div class="swiper-slid-tit">
@@ -33,27 +38,17 @@
                     </div>
                   </div>
                 </div>
-              </div>
-    
-    </v-slide-group-item>
+    </v-slide-item>
     </v-slide-group>
         </v-col>
       </v-row>
     </v-container>
-  </v-section>
+  </section>
 </template>
   
   <script>
 export default {
   name: 'NashaComanda',
-/* methods: {
-    goToPrevSlide() {
-      this.activeSlide = Math.max(this.activeSlide - 1, 0);
-    },
-    goToNextSlide() {
-      this.activeSlide = Math.min(this.activeSlide + 1, this.teamMembers.length - 1);
-    },
-  },*/
   data() {
     return {
       activeSlide: 0,
